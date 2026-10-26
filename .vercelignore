@@ -1,0 +1,24 @@
+# Version Control
+.git
+.gitignore
+
+# Documentation & Spec
+PRD-King-Motor.md
+
+# Dev & Screenshot helper artifacts
+preview/
+preview-hero.png
+download.jpg
+*.log
+
+# Editor & System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.*
+

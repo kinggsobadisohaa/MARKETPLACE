@@ -1,0 +1,52 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/kebijakan-privasi",
+      "destination": "/kebijakan-privasi.html"
+    },
+    {
+      "source": "/syarat-ketentuan",
+      "destination": "/syarat-ketentuan.html"
+    },
+    {
+      "source": "/(data|scripts|src)/(.*)",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/(package\\.json|package-lock\\.json|PRD-King-Motor\\.md|preview-hero\\.png|download\\.jpg)",
+      "destination": "/404.html"
+    }
+  ]
+}
+

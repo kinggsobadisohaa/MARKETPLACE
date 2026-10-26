@@ -19,6 +19,30 @@ const write = (p, content) => {
 const site = readJSON("data/site.json");
 const units = readJSON("data/units.json");
 
+// Domain bisa di-override lewat env (mis. preview deploy Vercel):
+//   SITE_DOMAIN=https://king-motor.vercel.app npm run build
+// Otomatis deteksi domain Vercel jika SITE_DOMAIN tidak ditentukan manual:
+const vercelHost =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || "";
+const autoVercelDomain = vercelHost ? `https://${vercelHost}` : "";
+const SITE_DOMAIN = (process.env.SITE_DOMAIN || autoVercelDomain || "")
+  .trim()
+  .replace(/\/+$/, "");
+if (SITE_DOMAIN) site.domain = SITE_DOMAIN;
+
+// Override opsional lewat environment variable Vercel:
+if (process.env.WA_NUMBER) {
+  site.waNumber = process.env.WA_NUMBER.trim();
+}
+if (process.env.GA_ID) {
+  site.integrations = site.integrations || {};
+  site.integrations.gaId = process.env.GA_ID.trim();
+}
+if (process.env.FORM_ENDPOINT) {
+  site.integrations = site.integrations || {};
+  site.integrations.formEndpoint = process.env.FORM_ENDPOINT.trim();
+}
+
 /* ---------------------------------- utils --------------------------------- */
 
 const esc = (value) =>
@@ -316,11 +340,12 @@ write(
   })
 );
 
-// 4. 404
+// 4. 404 — base "/" agar aset tetap benar walau halaman ini dipakai
+//    untuk URL dalam (mis. /motor/slug/yang-tidak-ada)
 write(
   "404.html",
   renderShell("src/pages/404.html", {
-    base: "",
+    base: "/",
     canonical: `${site.domain}/404.html`,
     pageTitle: "Halaman tidak ditemukan — King Motor Mojokerto",
     pageDescription: "Halaman yang Anda cari tidak ditemukan.",
