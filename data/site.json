@@ -1,0 +1,56 @@
+{
+  "brand": "King Motor",
+  "tagline": "Showroom Motor Bekas Mojokerto",
+  "domain": "https://kingmotor-mojokerto.com",
+  "description": "Jual beli motor bekas berkualitas di Mojokerto. Stok matic, bebek, dan sport. Surat lengkap, garansi mesin, bisa kredit & tukar tambah.",
+  "phoneDisplay": "0812-3456-7890",
+  "waNumber": "6281234567890",
+  "email": "halo@kingmotor-mojokerto.com",
+  "address": {
+    "street": "Jl. Raya Gajah Mada No. 88",
+    "district": "Magersari",
+    "city": "Kota Mojokerto",
+    "province": "Jawa Timur",
+    "postalCode": "61314",
+    "full": "Jl. Raya Gajah Mada No. 88, Magersari, Kota Mojokerto, Jawa Timur 61314",
+    "mapsQuery": "Mojokerto, Jawa Timur",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mojokerto%2C%20Jawa%20Timur",
+    "lat": -7.4705,
+    "lng": 112.4338
+  },
+  "hours": {
+    "timezone": "Asia/Jakarta",
+    "weekly": [
+      { "day": 0, "label": "Minggu", "open": "09:00", "close": "14:00" },
+      { "day": 1, "label": "Senin", "open": "08:00", "close": "17:00" },
+      { "day": 2, "label": "Selasa", "open": "08:00", "close": "17:00" },
+      { "day": 3, "label": "Rabu", "open": "08:00", "close": "17:00" },
+      { "day": 4, "label": "Kamis", "open": "08:00", "close": "17:00" },
+      { "day": 5, "label": "Jumat", "open": "08:00", "close": "17:00" },
+      { "day": 6, "label": "Sabtu", "open": "08:00", "close": "17:00" }
+    ]
+  },
+  "stats": [
+    { "value": 8, "suffix": " Tahun", "label": "Melayani Mojokerto" },
+    { "value": 1200, "suffix": "+", "label": "Unit terjual" },
+    { "value": 4.9, "suffix": "/5", "label": "Rating pembeli", "decimals": 1 },
+    { "value": 100, "suffix": "%", "label": "Surat terverifikasi" }
+  ],
+  "social": [
+    { "name": "Instagram", "url": "#", "handle": "@kingmotor.mojokerto" },
+    { "name": "Facebook", "url": "#", "handle": "King Motor Mojokerto" },
+    { "name": "TikTok", "url": "#", "handle": "@kingmotor.mojokerto" }
+  ],
+  "credit": {
+    "flatRatePerMonth": 0.023,
+    "note": "Simulasi angsuran memakai bunga flat 2,3% per bulan. Angka final mengikuti persetujuan leasing.",
+    "tenors": [12, 24, 36],
+    "downPayments": [20, 30, 40],
+    "samplePrice": 20000000
+  },
+  "integrations": {
+    "gaId": "",
+    "metaPixelId": "",
+    "formEndpoint": ""
+  }
+}

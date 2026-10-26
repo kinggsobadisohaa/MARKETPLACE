@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Ilustrasi sepeda motor matic King Motor</title>
+  <desc id="heroDesc">Ilustrasi side view skuter matic berwarna navy dengan aksen emas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123A61"/>
+      <stop offset="1" stop-color="#081C33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#F5A623" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#F5A623" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5A623" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#F5A623" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#F5A623" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="600" fill="url(#bg)"/>
+  <circle cx="380" cy="300" r="300" fill="url(#glow)"/>
+  <circle cx="380" cy="300" r="232" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1.5"/>
+  <circle cx="380" cy="300" r="300" fill="none" stroke="#FFFFFF" stroke-opacity=".06" stroke-width="1.5"/>
+  <path d="M0 470 H760" stroke="#FFFFFF" stroke-opacity=".07" stroke-width="1"/>
+  <path d="M0 500 H760" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
+
+  <ellipse cx="380" cy="452" rx="255" ry="22" fill="#020B16" opacity=".45"/>
+
+  <g transform="translate(60 66) scale(1.02)">
+    <!-- wheels -->
+    <g>
+      <circle cx="200" cy="355" r="58" fill="none" stroke="#0A1B2E" stroke-width="19"/>
+      <circle cx="200" cy="355" r="58" fill="none" stroke="#1B4A78" stroke-width="15"/>
+      <circle cx="200" cy="355" r="26" fill="none" stroke="#F5A623" stroke-width="5"/>
+      <circle cx="200" cy="355" r="6" fill="#F5A623"/>
+      <path d="M200 329 V345 M200 365 V381 M174 355 H190 M210 355 H226" stroke="#F5A623" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    </g>
+    <g>
+      <circle cx="455" cy="355" r="58" fill="none" stroke="#0A1B2E" stroke-width="19"/>
+      <circle cx="455" cy="355" r="58" fill="none" stroke="#1B4A78" stroke-width="15"/>
+      <circle cx="455" cy="355" r="26" fill="none" stroke="#F5A623" stroke-width="5"/>
+      <circle cx="455" cy="355" r="6" fill="#F5A623"/>
+      <path d="M455 329 V345 M455 365 V381 M429 355 H445 M465 355 H481" stroke="#F5A623" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    </g>
+
+    <!-- swingarm + exhaust -->
+    <path d="M200 355 L282 342" stroke="#1B4A78" stroke-width="11" stroke-linecap="round"/>
+    <path d="M243 300 L262 340" stroke="#F5A623" stroke-width="7" stroke-linecap="round"/>
+    <path d="M212 348 H306" stroke="#94A3B8" stroke-width="15" stroke-linecap="round"/>
+    <circle cx="310" cy="348" r="9" fill="#CBD5E1"/>
+
+    <!-- main body -->
+    <path d="M105 300 C105 274 122 256 148 252 L232 246 C252 244 266 254 268 272 L272 302 C274 320 260 332 242 332 L132 332 C116 332 105 320 105 300 Z" fill="#0B2A4A"/>
+    <path d="M114 306 H252" stroke="url(#shine)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+
+    <!-- seat -->
+    <path d="M142 252 C146 232 164 221 188 221 L246 221 C260 221 268 230 268 240 C268 248 260 252 248 252 Z" fill="#07182A"/>
+    <path d="M162 238 H246" stroke="#F5A623" stroke-width="2" stroke-dasharray="5 5" opacity=".55"/>
+
+    <!-- floorboard -->
+    <rect x="252" y="304" width="116" height="24" rx="12" fill="#123A61"/>
+    <rect x="264" y="309" width="92" height="5" rx="2.5" fill="#F5A623" opacity=".45"/>
+
+    <!-- leg shield -->
+    <path d="M352 322 L352 248 C352 224 365 205 386 196 L414 183 L431 203 L404 217 C392 223 386 233 386 247 L386 322 Z" fill="#0B2A4A"/>
+    <path d="M366 258 C366 241 375 228 390 221" stroke="#F5A623" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+
+    <!-- front fender -->
+    <path d="M403 334 C417 283 493 283 509 334" fill="none" stroke="#0B2A4A" stroke-width="15" stroke-linecap="round"/>
+
+    <!-- fork -->
+    <path d="M428 203 L455 352" stroke="#94A3B8" stroke-width="9" stroke-linecap="round"/>
+    <path d="M418 198 L442 349" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- handlebar -->
+    <path d="M398 192 L430 154" stroke="#0B2A4A" stroke-width="11" stroke-linecap="round"/>
+    <path d="M414 152 H466" stroke="#0B2A4A" stroke-width="10" stroke-linecap="round"/>
+    <path d="M452 152 L458 126" stroke="#0B2A4A" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="459" cy="119" rx="11" ry="7.5" fill="#0B2A4A"/>
+    <circle cx="466" cy="152" r="6" fill="#07182A"/>
+
+    <!-- headlight -->
+    <circle cx="416" cy="207" r="15" fill="#F5A623"/>
+    <circle cx="416" cy="207" r="15" fill="none" stroke="#FFD98A" stroke-width="2" opacity=".8"/>
+    <circle cx="412" cy="203" r="4.5" fill="#FFF6DC"/>
+
+    <!-- rear light + plate -->
+    <rect x="99" y="291" width="13" height="19" rx="5" fill="#EF4444"/>
+    <rect x="112" y="342" width="42" height="17" rx="4" fill="#E2E8F0"/>
+    <path d="M119 350 H145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- gold badge on body -->
+    <path d="M150 288 l10 -6 10 6 -10 6 z" fill="#F5A623"/>
+  </g>
+
+  <g font-family="'Segoe UI', system-ui, sans-serif" fill="#FFFFFF" opacity=".55">
+    <text x="380" y="566" text-anchor="middle" font-size="13" letter-spacing="7">KING MOTOR</text>
+  </g>
+</svg>

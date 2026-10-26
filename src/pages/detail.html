@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{pageDescription}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta name="theme-color" content="#0B2A4A">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="King Motor Mojokerto">
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{pageDescription}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{domain}}/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="{{base}}assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{base}}assets/css/style.css">
+  <script type="application/ld+json">{{schema}}</script>
+</head>
+<body class="page-detail has-buybar">
+{{header}}
+
+<main id="main">
+  <div class="detail-top">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{base}}index.html">Beranda</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{base}}index.html#stok">Stok Motor</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{{u.title}}</span>
+      </nav>
+
+      <div class="detail-grid">
+        <div class="detail-gallery">
+          <div class="detail-media">
+            <img src="{{u.image}}" alt="Ilustrasi {{u.title}} di King Motor Mojokerto" width="800" height="600">
+            <span class="badge badge--{{u.status}} badge--float">{{u.statusLabel}}</span>
+            <span class="media-note">Ilustrasi unit — minta foto asli via WhatsApp</span>
+          </div>
+          <ul class="detail-media-points">
+            <li>Surat lengkap &amp; terverifikasi</li>
+            <li>Garansi mesin 7 hari</li>
+            <li>Bisa test ride di showroom</li>
+          </ul>
+        </div>
+
+        <div class="detail-summary">
+          <p class="eyebrow">Stok {{u.typeLabel}} · {{u.year}}</p>
+          <h1>{{u.title}}</h1>
+          <div class="detail-chips">
+            <span>{{u.year}}</span>
+            <span>{{u.km}}</span>
+            <span>{{u.color}}</span>
+            <span>{{u.transmission}}</span>
+          </div>
+
+          <div class="price-box">
+            <p class="price-label">Harga tunai</p>
+            <p class="price-value">{{u.price}}</p>
+            <p class="price-credit">DP mulai <strong>{{u.dp}}</strong> · angsuran mulai <strong>{{u.installment}}/bulan</strong> (24 bulan)</p>
+          </div>
+
+          <div class="detail-actions">
+            <a class="btn btn-wa btn-lg" href="{{u.waDetail}}" target="_blank" rel="noopener" data-ga="wa_click" data-location="detail_primary" data-unit="{{u.slug}}">
+              <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.02 12.05 2.02c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.94L0 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.48-8.41"/></svg>
+              Chat WhatsApp
+            </a>
+            <a class="btn btn-outline btn-lg" href="{{u.waBooking}}" target="_blank" rel="noopener" data-ga="wa_click" data-location="detail_booking" data-unit="{{u.slug}}">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 9.5h18M8.5 14h2M13.5 14h2"/></svg>
+              Booking test ride
+            </a>
+          </div>
+
+          <ul class="detail-trust">
+            <li><strong>{{u.documentStatus}}</strong><span>BPKB &amp; STNK sudah dicek</span></li>
+            <li><strong>Pajak {{u.taxLabel}}</strong><span>Cek masa berlaku sebelum deal</span></li>
+            <li><strong>{{u.warranty}}</strong><span>Syarat &amp; ketentuan berlaku</span></li>
+          </ul>
+
+          <p class="detail-disclaimer">Harga dapat berubah dan unit dapat terjual lebih dulu. Konfirmasi ketersediaan via WhatsApp sebelum datang.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--tight">
+    <div class="container detail-content-grid">
+      <div class="detail-content">
+        <h2>Tentang unit ini</h2>
+        <p class="lead">{{u.description}}</p>
+
+        <h2>Spesifikasi</h2>
+        <dl class="spec-grid">
+          <div><dt>Merek</dt><dd>{{u.brand}}</dd></div>
+          <div><dt>Tipe</dt><dd>{{u.model}}</dd></div>
+          <div><dt>Tahun</dt><dd>{{u.year}}</dd></div>
+          <div><dt>Transmisi</dt><dd>{{u.transmission}}</dd></div>
+          <div><dt>Warna</dt><dd>{{u.color}}</dd></div>
+          <div><dt>Kilometer</dt><dd>{{u.km}}</dd></div>
+          <div><dt>Pajak berlaku</dt><dd>{{u.taxLabel}}</dd></div>
+          <div><dt>Dokumen</dt><dd>{{u.documentStatus}}</dd></div>
+          <div><dt>Garansi</dt><dd>{{u.warranty}}</dd></div>
+          <div><dt>Status</dt><dd>{{u.statusLabel}}</dd></div>
+        </dl>
+
+        <h2>Catatan kondisi</h2>
+        <ul class="check-list">
+          {{u.conditionList}}
+        </ul>
+        <p class="muted small">Kondisi unit disampaikan apa adanya. Kami menyarankan Anda melihat dan mencoba unit langsung di showroom sebelum transaksi.</p>
+      </div>
+
+      <aside class="detail-aside">
+        <div class="aside-card">
+          <h2>Tanya unit ini</h2>
+          <p>Tim kami bisa mengirim foto terbaru, video singkat, dan detail surat lewat WhatsApp.</p>
+          <a class="btn btn-wa btn-block" href="{{u.waDetail}}" target="_blank" rel="noopener" data-ga="wa_click" data-location="detail_aside" data-unit="{{u.slug}}">Chat WhatsApp</a>
+          <a class="aside-phone" href="tel:{{phoneHref}}">{{phoneDisplay}}</a>
+        </div>
+        <div class="aside-card aside-card--navy">
+          <p class="eyebrow eyebrow--light">Sebelum beli</p>
+          <h2>Cek unit, jangan buru-buru.</h2>
+          <p>Silakan datang, cek surat, nyalakan mesin, dan test ride. Kami tidak memaksa unit terjual hari ini.</p>
+          <a class="text-link text-link--gold" href="{{base}}index.html#lokasi">Lihat lokasi showroom <span aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section related">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Pilihan lain</p>
+          <h2>Unit serupa di showroom</h2>
+        </div>
+        <a class="text-link" href="{{base}}index.html#stok">Lihat semua stok <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="unit-grid unit-grid--related">
+        {{related}}
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="buybar">
+  <div class="buybar-price">
+    <span>Harga tunai</span>
+    <strong>{{u.price}}</strong>
+  </div>
+  <a class="btn btn-wa" href="{{u.waDetail}}" target="_blank" rel="noopener" data-ga="wa_click" data-location="buybar" data-unit="{{u.slug}}">Chat WhatsApp</a>
+</div>
+
+{{footer}}
+<script src="{{base}}assets/js/data.js"></script>
+<script src="{{base}}assets/js/app.js"></script>
+</body>
+</html>

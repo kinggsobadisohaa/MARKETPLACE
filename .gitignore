@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build/screenshot artifacts (dev only)
+preview/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs & env
+*.log
+.env
+.env.*
